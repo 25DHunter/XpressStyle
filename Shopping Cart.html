@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Xpress Style</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+  background-color:lightpink;
+
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+   
+  <div class="w3-bar w3-lightpink w3-card" id="#home">
+   
+     
+    <img src="Xpress%20Style.png" alt="XpressStyleLogo"style="width:100px;height:100px;">
+     
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="test.html#home" class="w3-bar-item w3-button"><i class="fa fa-user"></i> HOME</a> 
+      <a href="test.html#designers" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#designers" class="w3-bar-item w3-button"><i class="fa fa-user"></i> DESIGNERS</a>
+      <a href="test.html#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRODUCTS</a>
+      <a href="test.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="Shopping%20Cart.html" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> </a>
+    </div>
+    
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">about</a>
+  <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button">designers</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">pricing</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">contact</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+   <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+<head>
+ <b>  <title>Shopping Cart</title></b>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+   <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+   <section>
+      <div class="container">
+         <h2 class="px-5 p-2">My shopping cart</h2>
+         <div class="cart">
+            <div class="col-md-12 col-lg-10 mx-auto">
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item">
+                        <img src="images/product-1.png" alt="">
+                        <h5>Casual Epicene Night (Size:Med)</h5>
+                          <img src="IMG_1331.JPG" style="width:20%">
+                     </div>
+
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="phone-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="phone-number" type="number" min="0" class="form-control text-center" value="1">
+                           <button id="phone-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <h5>$ <span id="phone-total">34.99</span> </h5>
+                        <img src="images/remove.png" alt="" class="remove-item">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item mx-auto">
+                        <img src="images/product-2.png" alt="">
+                        <h5>Rugged Streetwear (Size:L )</h5>
+                          <img src="IMG_1284.JPG" style="width:20%">
+                     </div>
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="case-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="case-number" type="number" min="0" class="form-control text-center" value="1">
+                           <button  id="case-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+
+                        </div>
+                        <h5>$ <span id="case-total">35.99</span> </h5>
+                        <img src="images/remove.png" alt="" class="remove-item">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <div class="row g-2">
+
+                     <div class="col-6">
+                        <h5>Subtotal: </h5>
+                        <h5>Tax:</h5>
+                        <h5>Total:</h5>
+                     </div>
+
+                     <div class="col-6 status">
+                        <h5>$<span id="sub-total">70.98</span></h5>
+                        <h5>$<span id="tax-amount">4.52</span></h5>
+                        <h5>$<span id="total-price">75.50</span></h5>
+                     </div>
+                     
+                  </div>
+               </div>
+               <div class="col-md-12 pt-4 pb-4">
+                    <button><a href="test2.html#contactt" class="w3-bar-item w3-button"><i class="btn btn-success check-out"></i> Check Out</a> </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <script src="app.js"></script>
+</body>
+</html>
